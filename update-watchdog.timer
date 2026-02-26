@@ -1,0 +1,11 @@
+[Unit]
+Description=abissnet update-watchdog timer
+
+[Timer]
+OnBootSec=15min
+OnCalendar=*-*-01,04,07,10,13,16,19,22,25,28 03:00:00
+RandomizedDelaySec=7200
+Persistent=true
+
+[Install]
+WantedBy=timers.target
