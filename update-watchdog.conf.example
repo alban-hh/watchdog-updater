@@ -1,0 +1,8 @@
+TOKEN_TELEGRAM=""
+ID_BISEDE=""
+VONESA_SEKONDA=1800
+SKEDARI_LOG="/var/log/update-watchdog.log"
+SKEDARI_BLLOKIMIT="/var/run/update-watchdog.lock"
+EMRI_SERVERIT=""
+PROVE="false"
+HAPESIRA_MIN_MB=500

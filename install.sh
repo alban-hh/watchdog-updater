@@ -99,10 +99,10 @@ install -m 0755 "$DOSJA_SKRIPTIT/update-watchdog.sh" /usr/local/bin/update-watch
 if [ -f /etc/update-watchdog.conf ]; then
     kujdes "/etc/update-watchdog.conf ekziston. Nuk mbishkruhet."
     kujdes "Konfiguracioni i ri u ruajt ne /etc/update-watchdog.conf.new"
-    install -m 0600 "$DOSJA_SKRIPTIT/update-watchdog.conf" /etc/update-watchdog.conf.new
+    install -m 0600 "$DOSJA_SKRIPTIT/update-watchdog.conf.example" /etc/update-watchdog.conf.new
 else
     shfaq "Instalim konfig -> /etc/update-watchdog.conf"
-    install -m 0600 "$DOSJA_SKRIPTIT/update-watchdog.conf" /etc/update-watchdog.conf
+    install -m 0600 "$DOSJA_SKRIPTIT/update-watchdog.conf.example" /etc/update-watchdog.conf
 fi
 
 touch /var/log/update-watchdog.log
